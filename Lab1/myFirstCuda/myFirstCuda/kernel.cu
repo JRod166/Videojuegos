@@ -1,5 +1,3 @@
-#include "stdafx.h"
-
 #include <iostream>
 
 #include <cuda.h>
@@ -9,12 +7,12 @@ using namespace std;
 
 __global__ void myFirstKernel()
 {
-	
+
 }
 
 void main()
 {
-	myFirstKernel<<< 1,1 >>>();
+	myFirstKernel << < 1, 1 >> > ();
 
 	cin.get();
 }
